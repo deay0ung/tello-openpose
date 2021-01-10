@@ -368,7 +368,7 @@ class TelloController(object):
             if keyname in self.controls_keypress:
                 self.controls_keypress[keyname]()
         except AttributeError:
-            log.debug(f'special key {keyname0} pressed')
+            log.debug(f'special key {keyname} pressed')
 
     def on_release(self, keyname):
         """
